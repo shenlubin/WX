@@ -1,0 +1,19 @@
+<!--index.wxml-->
+
+
+<view class="warp" style="background-image: url('http://buffalonas.com/ShenLubinCloud/axs/u:bd640ed1-83b5-418e-b091-e57873dc93b8/Public/weChat_pic/0e1f523c181fb45edcec227736fec627.jpg')">
+
+<view class='title1'>{{ title }}</view>
+<text class="bar1">=================================================</text>
+<textarea class='content1'>
+     
+  规则：将随机抽出二位主管和一位产品经理，作为评审小组成员。
+</textarea>
+<view class='content2'>{{ msg }}</view>
+<view class='content2'>{{ msg1 }}</view>
+<view class="container">
+
+  <button bindtap="clickMe" class="btn1">抽 签</button>
+</view>
+
+</view>

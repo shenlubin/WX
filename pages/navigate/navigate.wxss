@@ -1,0 +1,16 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+
+
+
+.flex-wrp {display: flex;}
+.bc_green {background: greenyellow;}
+.bc_red {background:gainsboro;}
+.bc_blue {background: blanchedalmond;}

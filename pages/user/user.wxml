@@ -1,0 +1,42 @@
+<!--user.wxml-->
+<view class="container log-list">
+
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+<!-- <open-data type="userNickName"></open-data> -->
+<!-- <button bindtap="click_Me">导航</button> -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!-- <view class="section">
+    
+    <input name="input" placeholder="请输入您的目的地" />
+  </view> -->
+    <view class="page-section">
+    <view class="weui-cells__title">您的目的地</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input name="input" class="weui-input" auto-focus placeholder="请输入您的目的地"/>
+      </view>
+    </view>
+    </view>
+  <view class="btn-area">
+    <button form-type="submit">导航</button>
+  </view>
+  <view>查询结果</view>
+   <view>========================</view>
+
+  <block wx:if="{{searchResult !=null}}">
+  <view wx:for="{{searchResult}}">
+    <navigator
+    url="/pages/navigate/navigate?title={{item.title}}&address={{item.address}}&lat={{item.location.lat}}&lng={{item.location.lng}}&tel={{item.tel}}"
+    hover-class="navigator-hover"
+  >
+  {{item.title}}
+  </navigator>
+  </view>
+</block>
+
+ <block wx:if="{{searchResult.length==0}}">
+
+ <view>未找到相关信息</view>
+ </block>
+</form>
+</view> 
