@@ -2,14 +2,35 @@ Page({
   data: {
   title:'',
   address:'',
-  telphone:''
+  index: 0,
+  telphone:[]
   },
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  calling: function(e){
+    console.log(this.data.telphone[this.data.index]);
+  wx.makePhoneCall({
+    phoneNumber: this.data.telphone[this.data.index],
+    sucess: function () {
+      console.log('dail phone successful.')
+    },
+    fail: function () {
+      console.log('dail phone fail!')
+    }
+  })
+},
   onLoad: function (options) {
+    console.log(options.tel.split(";"));
+    var telArray=options.tel.split(";");
       var that=this;
       that.setData({
         title: options.title,
         address: options.address,
-        telphone: options.tel
+        telphone: telArray
       });
       // console.log(options.title);
       // console.log(options.address);

@@ -1,5 +1,17 @@
   <view  style="flex-direction:column;">
-    <view class="bc_green">名称：{{title}}</view>
-    <view class="bc_red">地址：{{address}} </view>
-    <view class="bc_blue">电话：{{telphone}} </view>
+    <view class="bc_green weui-cells">名称：{{title}}</view>
+    <view class="bc_red weui-cells">地址：{{address}} </view>
+   
+
+   <block wx:if="{{telphone[0].length >1 }}">
+   <view class="section__title weui-cells">请选择要拨打的电话：</view>
+    <form bindsubmit="calling" >
+   <picker bindchange="bindPickerChange" value="{{index}}" range="{{telphone}}">
+    <view class="picker weui-cells title_nav">{{telphone[index]}}</view>
+  </picker>
+ 
+    <button form-type="submit" >拨打电话</button>
+    </form>
+  </block>
+    
   </view>

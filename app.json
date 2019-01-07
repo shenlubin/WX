@@ -3,9 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/user/user",
-    "pages/navigate/navigate",
-    "pages/info/info",
-    "pages/express/express"
+    "pages/navigate/navigate"
   ],
   "permission": {
      "scope.userLocation": {
@@ -39,8 +37,8 @@
       {
         "selectedIconPath": "images/information.png",
         "iconPath": "images/information.png",
-        "pagePath": "pages/info/info",
-        "text": "信息"
+        "pagePath": "pages/user/user",
+        "text": "导航"
        }
     ]
   }
