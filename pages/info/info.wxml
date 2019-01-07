@@ -1,7 +1,7 @@
  
   <view class='list list1'>
    <navigator url="/pages/user/user" >
-     <image src='../../images/information.png' class="image"></image>
+     <image src='../../images/nav.jpg' class="image"></image>
      <text> 导航</text>
      <view class='arrow'></view>
    </navigator>
@@ -9,7 +9,7 @@
 
   <view class='list list2'>
    <navigator url="/pages/express/express" >
-     <image src='../../images/information.png' class="image"></image>
+     <image src='../../images/book.jpg' class="image"></image>
      <text> 快递查询</text>
      <view class='arrow'></view>
    </navigator>
@@ -17,7 +17,7 @@
 
   <view class='list list3'>
    <navigator url="/pages/user/user" >
-     <image src='../../images/information.png' class="image"></image>
+     <image src='../../images/weather.jpg' class="image"></image>
      <text> 天气查询</text>
      <view class='arrow'></view>
    </navigator>

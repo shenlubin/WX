@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/user/user",
-    "pages/navigate/navigate"
+    "pages/navigate/navigate",
+    "pages/info/info",
+    "pages/express/express"
   ],
   "permission": {
      "scope.userLocation": {
@@ -23,22 +25,22 @@
     "borderStyle": "white",
     "list": [
       {
-        "selectedIconPath": "images/index.png",
-        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index.jpg",
+        "iconPath": "images/index.jpg",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "selectedIconPath": "images/log.png",
-        "iconPath": "images/log.png",
+        "selectedIconPath": "images/category.jpg",
+        "iconPath": "images/category.jpg",
         "pagePath": "pages/logs/logs",
         "text": "日志"
       },
       {
-        "selectedIconPath": "images/information.png",
-        "iconPath": "images/information.png",
-        "pagePath": "pages/user/user",
-        "text": "导航"
+        "selectedIconPath": "images/information.jpg",
+        "iconPath": "images/information.jpg",
+        "pagePath": "pages/info/info",
+        "text": "信息"
        }
     ]
   }
