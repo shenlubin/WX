@@ -15,23 +15,23 @@ Page({
   
   formSubmit(e) {
     var that=this;
-    console.log('form发生了submit事件，携带数据为：', e.detail.value.input);
+   // console.log('form发生了submit事件，携带数据为：', e.detail.value.input);
     var expressNo=e.detail.value.input;
    
     var _this = this
 
-    console.log(expressNo);
-    console.log(_this.data.expressPinYin[_this.data.index]);
+   // console.log(expressNo);
+   // console.log(_this.data.expressPinYin[_this.data.index]);
 
     wx.request({
-      url: 'http://www.kuaidi100.com/query?type=' + _this.data.expressPinYin[_this.data.index] +'&postid='+expressNo,//json数据地址
+      url: 'https://www.kuaidi100.com/query?type=' + _this.data.expressPinYin[_this.data.index] +'&postid='+expressNo,//json数据地址
       headers: {
         'Content-Type': 'application/json'
       },
       success: function (res) {
         //console.log(res.data.imgListData)
         //console.log(res.data.imgListData[0].tag)
-        console.log(res.data.data);
+        //console.log(res.data.data);
         //console.log(res.data.leader[1]);
         //console.log(res.data.leader);
         //console.log(JSON.parse(res.data));
