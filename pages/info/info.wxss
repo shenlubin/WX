@@ -1,0 +1,42 @@
+
+.arrow{
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  position: absolute;
+  right: 20px;
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+.list{
+  width: 350px;
+  height: 30px;
+  border-bottom: 1px solid #999;
+  font-size: x-large;
+}
+
+.list1{
+
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
+.list2{
+  position:absolute;
+  left: 10px;
+  top: 60px;
+}
+
+.list3{
+  position:absolute;
+  left: 10px;
+  top: 100px;
+}
+
+.image{
+  width:20px;
+  height: 20px;
+ }

@@ -1,0 +1,45 @@
+<!--user.wxml-->
+<view class="container log-list">
+
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+<!-- <open-data type="userNickName"></open-data> -->
+<!-- <button bindtap="click_Me">导航</button> -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!-- <view class="section">
+    
+    <input name="input" placeholder="请输入您的目的地" />
+  </view> -->
+    <view class="page-section">
+    <view class="weui-cells__title">您的快递订单号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input name="input" class="weui-input" auto-focus placeholder="请输入您的快递订单号"/>
+      </view>
+    </view>
+    </view>
+  
+  <view class="section__title">快递公司</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{expressCompany}}">
+    <view class="picker">当前选择：{{expressCompany[index]}}</view>
+  </picker>
+
+  <view class="btn-area">
+    <button form-type="submit">快递查询</button>
+  </view>
+  <view>查询结果</view>
+   <view>========================</view>
+
+
+  <view class="bar" wx:for="{{searchResult}}">
+
+  {{item.time}}  {{item.context}}
+
+  </view>
+
+
+ <block wx:if="{{searchResult.length==0}}">
+
+ <view>未找到相关信息</view>
+ </block>
+</form>
+</view> 
