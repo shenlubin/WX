@@ -18,9 +18,8 @@
     </view>
     </view>
   
-  <view class="section__title">快递公司</view>
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{expressCompany}}">
-    <view class="picker">当前选择：{{expressCompany[index]}}</view>
+    <view class="picker">快递公司选择：{{expressCompany[index]}}</view>
   </picker>
 
   <view class="btn-area">

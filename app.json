@@ -5,6 +5,7 @@
     "pages/user/user",
     "pages/navigate/navigate",
     "pages/info/info",
+    "pages/weather/weather",
     "pages/express/express"
   ],
   "permission": {

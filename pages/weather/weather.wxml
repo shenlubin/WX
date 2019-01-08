@@ -1,0 +1,39 @@
+
+ <view class="page-body">
+    <swiper
+  indicator-dots="true"
+  autoplay="true"
+  interval="10000"
+  duration="1000"
+  style="  width: 300px;height: 500px; "
+>
+  <!-- <block wx:for="{{imgUrls}}"> -->
+    <swiper-item>
+      <text class="title_weather">{{weatherResult.basic.location}} 今天 {{weatherResult.now.cond_txt}}\n </text>
+      <text class="title_weather">温度：{{weatherResult.now.tmp}}\n</text>
+      <text class="title_weather">相对湿度：{{weatherResult.now.hum}}\n</text>
+      <text class="title_weather">风力：{{weatherResult.daily_forecast[0].wind_dir}}{{weatherResult.daily_forecast[0].wind_sc}}级\n\n</text>
+      <text class="content">穿衣建议：{{weatherResult.lifestyle[1].txt}}\n\n</text>
+      <text class="content">空气质量：{{weatherResult.lifestyle[7].brf}}    PM2.5：{{aqiResult.air_now_city.pm25}}\n</text>
+      <text class="content">{{weatherResult.lifestyle[7].txt}}\n</text>
+      <text class="content_1">{{today}}</text>
+    </swiper-item>
+    
+    <swiper-item>
+      <text class="title_weather">{{weatherResult.basic.location}} 明天 {{weatherResult.daily_forecast[1].cond_txt_d}}\n</text>
+      <text class="title_weather">最高温度：{{weatherResult.daily_forecast[1].tmp_max}}\n</text>
+      <text class="title_weather">最低温度：{{weatherResult.daily_forecast[1].tmp_min}}\n</text>
+      <text class="title_weather">相对湿度：{{weatherResult.daily_forecast[1].hum}}\n</text>
+      <text class="title_weather">风力：{{weatherResult.daily_forecast[1].wind_dir}}{{weatherResult.daily_forecast[1].wind_sc}}级</text>
+    </swiper-item>
+
+    <swiper-item>
+      <text class="title_weather">{{weatherResult.basic.location}} 后天 {{weatherResult.daily_forecast[2].cond_txt_d}}\n</text>
+      <text class="title_weather">最高温度：{{weatherResult.daily_forecast[2].tmp_max}}\n</text>
+      <text class="title_weather">最低温度：{{weatherResult.daily_forecast[2].tmp_min}}\n</text>
+      <text class="title_weather">相对湿度：{{weatherResult.daily_forecast[2].hum}}\n</text>
+      <text class="title_weather">风力：{{weatherResult.daily_forecast[2].wind_dir}}{{weatherResult.daily_forecast[2].wind_sc}}级</text>
+    </swiper-item>
+  <!-- </block> -->
+  </swiper>
+</view>

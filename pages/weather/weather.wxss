@@ -1,0 +1,24 @@
+/* pages/weather/weather.wxss */
+.title_weather{
+  font-size: xx-large;
+  position: relative;
+  left: 20px;
+
+}
+
+.title_weather_1{
+  font-size: xx-large;
+  position: relative;
+  left: 60px;
+
+}
+
+.content{
+  font-size: large
+}
+
+.content_1{
+  font-size: large;
+    position: relative;
+  left: 100px;
+}
