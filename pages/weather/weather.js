@@ -9,6 +9,7 @@ Page({
     weatherResult:[],
     aqiResult:[],
     today:'',
+    parent_city:'',
   },
 
   /**
@@ -28,30 +29,31 @@ Page({
              'Content-Type': 'application/json'
            },
            success: function (res) {
-             console.log(res.data.HeWeather6[0]);
+            //  console.log(res.data.HeWeather6[0]);
+            //  console.log(res.data.HeWeather6[0].basic.parent_city);
              _this.setData({
                weatherResult: res.data.HeWeather6[0],
                today: util.formatTime(new Date()),
+               parent_city: res.data.HeWeather6[0].basic.parent_city,
                //res代表success函数的事件对，data是固定的，imgListData是上面json数据中imgListData
              })
+            //  console.log(_this.data.weatherResult.basic.parent_city);
+             wx.request({
+               url: 'https://free-api.heweather.net/s6/air/now?key=' + weatherKey + '&location=' + _this.data.parent_city,
+               headers: {
+                 'Content-Type': 'application/json'
+               },
+               success: function (res) {
+                 console.log(res.data.HeWeather6[0]);
+                 _this.setData({
+                   aqiResult: res.data.HeWeather6[0],
+                   //res代表success函数的事件对，data是固定的，imgListData是上面json数据中imgListData
+                 })
 
+               }
+             })
            }
-         }),
-           wx.request({
-           url: 'https://free-api.heweather.net/s6/air/now?key=' + weatherKey + '&location=' + res.latitude + ',' + res.longitude,
-             headers: {
-               'Content-Type': 'application/json'
-             },
-             success: function (res) {
-               console.log(res.data.HeWeather6[0]);
-               _this.setData({
-                 aqiResult: res.data.HeWeather6[0],
-                 //res代表success函数的事件对，data是固定的，imgListData是上面json数据中imgListData
-               })
-
-             }
-           })
-
+         })
        },
      })
   },
