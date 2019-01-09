@@ -29,7 +29,7 @@ Page({
              'Content-Type': 'application/json'
            },
            success: function (res) {
-            //  console.log(res.data.HeWeather6[0]);
+              console.log(res.data.HeWeather6[0]);
             //  console.log(res.data.HeWeather6[0].basic.parent_city);
              _this.setData({
                weatherResult: res.data.HeWeather6[0],

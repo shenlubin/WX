@@ -12,13 +12,20 @@
   left: 60px;
 
 }
-
+.bar{
+  border-bottom: 1px solid #999;
+  width: 380px;
+}
 .content{
-  font-size: large
+  font-size: large;
 }
 
 .content_1{
-  font-size: large;
-    position: relative;
-  left: 100px;
+  font-size: medium;
+  position: relative;
+    left: 200px;
+}
+
+.wrap{
+  word-wrap:break-word;
 }

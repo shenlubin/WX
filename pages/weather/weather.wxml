@@ -5,7 +5,7 @@
   autoplay="true"
   interval="10000"
   duration="1000"
-  style="  width: 380px;height: 560px;background-image:url('http://buffalonas.com/ShenLubinCloud/axs/u:46757c90-c44c-4630-ab95-69766309df37/Career/ShenLubin/WX/weather_background.jpg') "
+  style="  width: 380px;height: 600px;background-image:url('http://buffalonas.com/ShenLubinCloud/axs/u:46757c90-c44c-4630-ab95-69766309df37/Career/ShenLubin/WX/weather_background.jpg') "
 >
   <!-- <block wx:for="{{imgUrls}}"> -->
     <swiper-item>
@@ -13,9 +13,11 @@
       <text class="title_weather">温度：{{weatherResult.now.tmp}}\n</text>
       <text class="title_weather">相对湿度：{{weatherResult.now.hum}}\n</text>
       <text class="title_weather">风力：{{weatherResult.daily_forecast[0].wind_dir}}{{weatherResult.daily_forecast[0].wind_sc}}级\n\n</text>
-      <text class="content">穿衣建议：{{weatherResult.lifestyle[1].txt}}\n\n</text>
-      <text class="content">空气质量：{{weatherResult.lifestyle[7].brf}}    PM2.5：{{aqiResult.air_now_city.pm25}}\n</text>
-      <text class="content">{{weatherResult.lifestyle[7].txt}}\n</text>
+      <text class="content" style='word-wrap:normal'>穿衣建议：{{weatherResult.lifestyle[1].txt}}\n\n</text>
+      <text class="content" style='word-wrap:normal'>空气质量：{{weatherResult.lifestyle[7].brf}}    PM2.5：{{aqiResult.air_now_city.pm25}}\n</text>
+      <text class="content">{{weatherResult.lifestyle[7].txt}}\n\n</text>
+      <text class="bar"></text>
+       <text class="content">运动建议：{{weatherResult.lifestyle[3].txt}}\n</text>
       <text class="content_1">{{today}}</text>
     </swiper-item>
     

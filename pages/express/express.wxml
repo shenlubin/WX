@@ -19,10 +19,11 @@
     </view>
   
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{expressCompany}}">
-    <view class="picker">快递公司选择：{{expressCompany[index]}}</view>
+    <view class="picker" style="font-size: 24px">快递公司选择：{{expressCompany[index]}}</view>
   </picker>
 
   <view class="btn-area">
+    <text>\n</text>
     <button form-type="submit">快递查询</button>
   </view>
   <view>查询结果</view>
