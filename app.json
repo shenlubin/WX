@@ -6,7 +6,8 @@
     "pages/navigate/navigate",
     "pages/info/info",
     "pages/weather/weather",
-    "pages/express/express"
+    "pages/express/express",
+    "pages/message/message"
   ],
   "permission": {
      "scope.userLocation": {

@@ -1,8 +1,8 @@
 Page({
   data: {
     index: 0,
-    expressCompany: ['韵达','中通','顺丰','天天快递','申通'],
-    expressPinYin:['yunda','zhongtong','shunfeng','tiantiankuaidi','shentong'],
+    expressCompany: ['韵达','中通','顺丰','天天快递','申通','圆通'],
+    expressPinYin:['yunda','zhongtong','shunfeng','tiantiankuaidi','shentong','yuantong'],
     searchResult: []
   },
 

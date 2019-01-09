@@ -21,6 +21,15 @@
      <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;天气查询</text>
      <view class='arrow'></view>
    </navigator>
+   </view>
+   
+     <view class='list list4'>
+   <navigator url="/pages/message/message" >
+     <image src='../../images/book.jpg' class="image"></image>
+     <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;消息推送</text>
+     <view class='arrow'></view>
+   </navigator>
+
   </view>
 
 
