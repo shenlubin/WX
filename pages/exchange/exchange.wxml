@@ -1,0 +1,21 @@
+<!--pages/exchange/exchange.wxml-->
+<wxs module="filter" src="numbertofix.wxs"></wxs>
+<view class="title">{{exchange_date}}</view>
+<view class="container">
+    <view class="table">
+        <view class="tr">
+            <view class="th">货币名称</view>
+            <view class="th">现汇买入价</view>
+            <view class="th">现钞买入价</view>
+            <view class="th">现钞卖出价</view>
+            <view class="th">中行折算价</view>
+        </view>
+        <view class="tr" wx:for="{{exchange_data}}">
+            <view class="td">{{item[0]}}</view>
+            <view class="td">{{filter.numberToFix(item[2])}}</view>
+            <view class="td">{{filter.numberToFix(item[3])}}</view>
+            <view class="td">{{filter.numberToFix(item[4])}}</view>
+            <view class="td">{{filter.numberToFix(item[5])}}</view>
+        </view>
+    </view>
+</view>

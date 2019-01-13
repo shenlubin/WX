@@ -14,6 +14,7 @@ Page({
   },
   
   formSubmit(e) {
+    
     var that=this;
    // console.log('form发生了submit事件，携带数据为：', e.detail.value.input);
     var expressNo=e.detail.value.input;
@@ -46,6 +47,7 @@ Page({
   
 
   },
+
 
 
 

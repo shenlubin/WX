@@ -23,7 +23,7 @@
    </navigator>
    </view>
    
-     <view class='list list4'>
+<view class='list list4'>
    <navigator url="/pages/message/message" >
      <image src='../../images/book.jpg' class="image"></image>
      <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;消息推送</text>
@@ -32,5 +32,13 @@
 
   </view>
 
+<view class='list list5'>
+   <navigator url="/pages/exchange/exchange" >
+     <image src='../../images/book.jpg' class="image"></image>
+     <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;汇率查询</text>
+     <view class='arrow'></view>
+   </navigator>
+
+  </view>
 
 
