@@ -1,8 +1,10 @@
 <!--pages/exchange/exchange.wxml-->
 <wxs module="filter" src="numbertofix.wxs"></wxs>
-<view class="title">{{exchange_date}}</view>
-<view class="container">
+
     <view class="table">
+        <view class="tr">
+            <view class="th" style="background-color: yellow">{{exchange_date}} 每一外币对换人民币</view>
+        </view>
         <view class="tr">
             <view class="th">货币名称</view>
             <view class="th">现汇买入价</view>
@@ -18,4 +20,4 @@
             <view class="td">{{filter.numberToFix(item[5])}}</view>
         </view>
     </view>
-</view>
+

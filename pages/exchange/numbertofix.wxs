@@ -1,6 +1,7 @@
 var filter = {
   numberToFix: function (value) {
-    return parseFloat(value).toFixed(1)
+    var temp = parseFloat(value)/100;
+    return temp.toFixed(3)
   }
 }
 module.exports = {
