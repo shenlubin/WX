@@ -8,7 +8,8 @@
     "pages/weather/weather",
     "pages/express/express",
     "pages/exchange/exchange",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/news/news"
   ],
   "permission": {
      "scope.userLocation": {

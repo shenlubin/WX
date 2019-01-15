@@ -1,0 +1,4 @@
+<!--pages/news/news.wxml-->
+<view class="tr" wx:for="{{topNews}}">
+  <navigator url="{{item.url}}">{{item.title}}</navigator>
+</view>
