@@ -1,28 +1,23 @@
-// pages/news/news.js
+// pages/webview/webview.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   topNews: [],
-   shehuiNews: []
+   url: '',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  var  _this=this;
-  wx.request({
-    url: 'https://v.juhe.cn/toutiao/index?type=top&key=216d9971af1329e1e60f7c09de3f1d54',
-    success:function(res){
-        console.log(res.data.result.data);
-        _this.setData({
-          topNews: res.data.result.data,
-        })
-    }
-  })
+     console.log(options.url);
+     var _this=this;
+     _this.setData({
+       url: options.url,
+       }
+     )
   },
 
   /**

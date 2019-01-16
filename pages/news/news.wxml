@@ -1,4 +1,6 @@
 <!--pages/news/news.wxml-->
+<swiper-item>
 <view class="tr" wx:for="{{topNews}}">
-  <navigator url="{{item.url}}">{{item.title}}</navigator>
+  <navigator url="../webview/webview?url={{item.url}}">{{item.title}}</navigator>
 </view>
+</swiper-item>

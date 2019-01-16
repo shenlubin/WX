@@ -9,7 +9,8 @@
     "pages/express/express",
     "pages/exchange/exchange",
     "pages/message/message",
-    "pages/news/news"
+    "pages/news/news",
+    "pages/webview/webview"
   ],
   "permission": {
      "scope.userLocation": {
