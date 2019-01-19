@@ -1,1 +1,4 @@
-/* pages/news/news.wxss */
+.list{
+  border-bottom: 1px solid #999;
+  font-size: medium;
+}

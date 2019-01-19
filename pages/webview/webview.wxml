@@ -1,3 +1,6 @@
 <!--pages/webview/webview.wxml-->
-<text>{{url}}</text>
-<web-view src="{{url}}"></web-view>
+<scroll-view scroll-x >
+<view> <text selectable='true' >{{url}}</text></view>
+</scroll-view>
+
+<!-- <web-view src="{{url}}"></web-view> -->

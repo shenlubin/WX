@@ -1,6 +1,7 @@
 <!--pages/news/news.wxml-->
-<swiper-item>
-<view class="tr" wx:for="{{topNews}}">
-  <navigator url="../webview/webview?url={{item.url}}">{{item.title}}</navigator>
+
+ <text style="font-size: xx-large">头条新闻</text>
+<view  wx:for="{{topNews}}">
+  <navigator class="list" url="../webview/webview?url={{item.url}}" >{{item.title}}</navigator>
 </view>
-</swiper-item>
+
