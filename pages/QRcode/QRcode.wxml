@@ -1,0 +1,22 @@
+<!--pages/QRcode/QRcode.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class="page-section">
+    <view class="weui-cells__title">输入你要生成二维码的内容</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input name="input" class="weui-input" auto-focus placeholder="请输入您生成二维码的内容"/>
+      </view>
+    </view>
+    </view>
+
+  <view class="btn-area">
+    <text>\n</text>
+    <button form-type="submit">生成二维码</button>
+  </view>
+
+    <view>生成结果</view>
+   <view>========================</view>
+   <image src='{{QR_url}}' ></image>
+   <text bindtap='saveCode' data-src='{{QR_url}}'>保存</text>
+</form>

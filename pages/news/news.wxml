@@ -1,7 +1,34 @@
 <!--pages/news/news.wxml-->
-
- <text style="font-size: xx-large">头条新闻</text>
-<view  wx:for="{{topNews}}">
-  <navigator class="list" url="../webview/webview?url={{item.url}}" >{{item.title}}</navigator>
-</view>
+ <swiper
+  indicator-dots="true"
+  style="  width: 380px;height: 1200px;"
+ >
+   <swiper-item style="height:100%">
+   <text style="font-size: xx-large">头条新闻</text>
+   <scroll-view scroll-y >
+     <view  wx:for="{{topNews}}">
+  
+       <navigator class="list" url="../webview/webview?url={{item.url}}" >{{item.title}}</navigator>
+      </view>
+    </scroll-view>
+  </swiper-item>
+   <swiper-item style="height:100%">
+   <text style="font-size: xx-large">社会新闻</text>
+   <scroll-view scroll-y >
+     <view  wx:for="{{shehuiNews}}">
+  
+       <navigator class="list" url="../webview/webview?url={{item.url}}" >{{item.title}}</navigator>
+      </view>
+    </scroll-view>
+  </swiper-item>
+     <swiper-item style="height:100%">
+   <text style="font-size: xx-large">科技新闻</text>
+   <scroll-view scroll-y >
+     <view  wx:for="{{kejiNews}}">
+  
+       <navigator class="list" url="../webview/webview?url={{item.url}}" >{{item.title}}</navigator>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
 

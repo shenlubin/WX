@@ -18,6 +18,16 @@ Page({
        url: options.url,
        }
      )
+    wx.setClipboardData({
+      data: options.url,
+      success(res) {
+        wx.getClipboardData({
+          success(res) {
+            console.log(res.data) // data
+          }
+        })
+      }
+    })
   },
 
   /**

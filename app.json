@@ -10,7 +10,8 @@
     "pages/exchange/exchange",
     "pages/message/message",
     "pages/news/news",
-    "pages/webview/webview"
+    "pages/webview/webview",
+    "pages/QRcode/QRcode"
   ],
   "permission": {
      "scope.userLocation": {
@@ -30,20 +31,20 @@
     "borderStyle": "white",
     "list": [
       {
-        "selectedIconPath": "images/index.jpg",
-        "iconPath": "images/index.jpg",
+        "selectedIconPath": "images/index_new.jpg",
+        "iconPath": "images/index_new.jpg",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "selectedIconPath": "images/category.jpg",
-        "iconPath": "images/category.jpg",
+        "selectedIconPath": "images/log.jpg",
+        "iconPath": "images/log.jpg",
         "pagePath": "pages/logs/logs",
         "text": "日志"
       },
       {
-        "selectedIconPath": "images/information.jpg",
-        "iconPath": "images/information.jpg",
+        "selectedIconPath": "images/information_new.jpg",
+        "iconPath": "images/information_new.jpg",
         "pagePath": "pages/info/info",
         "text": "信息"
        }

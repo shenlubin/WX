@@ -6,7 +6,8 @@ Page({
    */
   data: {
    topNews: [],
-   shehuiNews: []
+   shehuiNews: [],
+   kejiNews: []
   },
 
   /**
@@ -17,12 +18,30 @@ Page({
   wx.request({
     url: 'https://v.juhe.cn/toutiao/index?type=top&key=216d9971af1329e1e60f7c09de3f1d54',
     success:function(res){
-        console.log(res.data.result.data);
+        // console.log(res.data.result.data);
         _this.setData({
           topNews: res.data.result.data,
         })
     }
   })
+    wx.request({
+      url: 'https://v.juhe.cn/toutiao/index?type=shehui&key=216d9971af1329e1e60f7c09de3f1d54',
+      success: function (res) {
+        // console.log(res.data.result.data);
+        _this.setData({
+          shehuiNews: res.data.result.data,
+        })
+      }
+    })
+    wx.request({
+      url: 'https://v.juhe.cn/toutiao/index?type=keji&key=216d9971af1329e1e60f7c09de3f1d54',
+      success: function (res) {
+        // console.log(res.data.result.data);
+        _this.setData({
+          kejiNews: res.data.result.data,
+        })
+      }
+    })
   },
 
   /**

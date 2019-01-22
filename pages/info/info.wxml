@@ -1,7 +1,7 @@
  
   <view class='list list1'>
    <navigator url="/pages/user/user" >
-     <image src='../../images/nav.jpg' class="image"></image>
+     <image src='../../images/navigate.jpg' class="image"></image>
      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;导航</text>
      <view class='arrow'></view>
    </navigator>
@@ -9,7 +9,7 @@
 
   <view class='list list2'>
    <navigator url="/pages/express/express" >
-     <image src='../../images/book.jpg' class="image"></image>
+     <image src='../../images/express.jpg' class="image"></image>
      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;快递查询</text>
      <view class='arrow'></view>
    </navigator>
@@ -17,7 +17,7 @@
 
   <view class='list list3'>
    <navigator url="/pages/weather/weather" >
-     <image src='../../images/weather.jpg' class="image"></image>
+     <image src='../../images/weather_new.jpg' class="image"></image>
      <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;天气查询</text>
      <view class='arrow'></view>
    </navigator>
@@ -34,7 +34,7 @@
 
 <view class='list list4'>
    <navigator url="/pages/exchange/exchange" >
-     <image src='../../images/book.jpg' class="image"></image>
+     <image src='../../images/money.jpg' class="image"></image>
      <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;汇率查询</text>
      <view class='arrow'></view>
    </navigator>
@@ -42,8 +42,17 @@
 </view>
 
 <view class='list list5'>
+   <navigator url="/pages/QRcode/QRcode" >
+     <image src='../../images/QR.jpg' class="image"></image>
+     <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;生成二维码</text>
+     <view class='arrow'></view>
+   </navigator>
+
+</view>
+
+<view class='list list6'>
    <navigator url="/pages/news/news" >
-     <image src='../../images/book.jpg' class="image"></image>
+     <image src='../../images/news.jpg' class="image"></image>
      <text decode="{{true}}"> &nbsp;&nbsp;&nbsp;时事新闻</text>
      <view class='arrow'></view>
    </navigator>

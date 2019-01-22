@@ -1,6 +1,7 @@
 <!--pages/webview/webview.wxml-->
 <scroll-view scroll-x >
 <view> <text selectable='true' >{{url}}</text></view>
+<view> <text selectable='true' >请在浏览器中查看具体内容</text></view>
 </scroll-view>
 
 <!-- <web-view src="{{url}}"></web-view> -->
