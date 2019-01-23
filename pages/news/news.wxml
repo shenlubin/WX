@@ -30,5 +30,17 @@
       </view>
     </scroll-view>
   </swiper-item>
+
+  
+     <swiper-item style="height:100%">
+   <text style="font-size: xx-large">财经新闻</text>
+   <scroll-view scroll-y >
+     <view  wx:for="{{caijingNews}}">
+  
+       <navigator class="list" url="../webview/webview?url={{item.url}}" >{{item.title}}</navigator>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
 </swiper>
 

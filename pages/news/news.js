@@ -7,7 +7,8 @@ Page({
   data: {
    topNews: [],
    shehuiNews: [],
-   kejiNews: []
+   kejiNews: [],
+   caijingNews: [],
   },
 
   /**
@@ -39,6 +40,15 @@ Page({
         // console.log(res.data.result.data);
         _this.setData({
           kejiNews: res.data.result.data,
+        })
+      }
+    })
+    wx.request({
+      url: 'https://v.juhe.cn/toutiao/index?type=caijing&key=216d9971af1329e1e60f7c09de3f1d54',
+      success: function (res) {
+        // console.log(res.data.result.data);
+        _this.setData({
+          caijingNews: res.data.result.data,
         })
       }
     })
